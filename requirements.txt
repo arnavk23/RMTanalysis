@@ -1,0 +1,10 @@
+# requirements.txt for Informer + WeightWatcher integration
+
+# Informer dependencies (PyTorch, numpy, etc.)
+torch
+numpy
+# WeightWatcher
+weightwatcher
+# For plotting
+matplotlib
+# (Add any additional dependencies as needed)

@@ -1,0 +1,32 @@
+PS C:\Users\kapoo\Downloads\rmt_arnav> c:/Users/kapoo/Downloads/rmt_arnav/.venv/Scripts/python.exe informer_weightwatcher/analyze_encoder_weightwatcher.py
+PyTorch is available but CUDA is not. Defaulting to SciPy for SVD
+Import error , reetting to svd accurate methods
+No checkpoint found. Saving randomly initialized model.
+Random checkpoint saved to: checkpoints\random_informer.pth
+SMALL N PL FIT
+SMALL N PL FIT
+SMALL N PL FIT
+SMALL N PL FIT
+SMALL N PL FIT
+SMALL N PL FIT
+Encoder details columns: ['layer_id', 'name', 'D', 'M', 'N', 'Q', 'alpha', 'alpha_weighted', 'entropy', 'has_esd', 'lambda_max', 'layer_type', 'log_alpha_norm', 'log_norm', 'log_spectral_norm', 'longname', 'matrix_rank', 'norm', 'num_evals', 'num_pl_spikes', 'rank_loss', 'rf', 'sigma', 'spectral_norm', 'stable_rank', 'status', 'sv_max', 'sv_min', 'warning', 'weak_rank_loss', 'xmax', 'xmin']
+Empty DataFrame
+Columns: [layer_id, name, D, M, N, Q, alpha, alpha_weighted, entropy, has_esd, lambda_max, layer_type, log_alpha_norm, log_norm, log_spectral_norm, longname, matrix_rank, norm, num_evals, num_pl_spikes, rank_loss, rf, sigma, spectral_norm, stable_rank, status, sv_max, sv_min, warning, weak_rank_loss, xmax, xmin]
+Index: []
+Empty DataFrame
+Columns: [layer_id, alpha, log_norm]
+Index: []
+Encoder layer singular values:
+encoder.attn_layers.0.attention.query_projection: singular values shape (512,), max 1.1474, min 0.0001
+encoder.attn_layers.0.attention.key_projection: singular values shape (512,), max 1.1527, min 0.0009
+encoder.attn_layers.0.attention.value_projection: singular values shape (512,), max 1.1366, min 0.0004
+encoder.attn_layers.0.attention.out_projection: singular values shape (512,), max 1.1367, min 0.0001
+encoder.attn_layers.0.conv1: singular values shape (512,), max 1.7291, min 0.5795
+encoder.attn_layers.0.conv2: singular values shape (512,), max 0.8644, min 0.2903
+encoder.attn_layers.1.attention.query_projection: singular values shape (512,), max 1.1471, min 0.0004
+encoder.attn_layers.1.attention.key_projection: singular values shape (512,), max 1.1473, min 0.0008
+encoder.attn_layers.1.attention.value_projection: singular values shape (512,), max 1.1568, min 0.0007
+encoder.attn_layers.1.attention.out_projection: singular values shape (512,), max 1.1541, min 0.0011
+encoder.attn_layers.1.conv1: singular values shape (512,), max 1.7228, min 0.5856
+encoder.attn_layers.1.conv2: singular values shape (512,), max 0.8642, min 0.2942
+encoder.conv_layers.0.downConv: singular values shape (512,), max 0.9081, min 0.2470

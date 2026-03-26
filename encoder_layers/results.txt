@@ -1,0 +1,95 @@
+PS C:\Users\kapoo\Downloads\rmt_arnav> c:/Users/kapoo/Downloads/rmt_arnav/.venv/Scripts/python.exe informer_weightwatcher/analyze_informer_encoder.py
+PyTorch is available but CUDA is not. Defaulting to SciPy for SVD
+Import error , reetting to svd accurate methods
+No checkpoint loaded. Using randomly initialized model.
+
+Encoder Layer 0:
+  attention.query_projection.weight: torch.Size([512, 512])
+  attention.key_projection.weight: torch.Size([512, 512])
+  attention.value_projection.weight: torch.Size([512, 512])
+  attention.out_projection.weight: torch.Size([512, 512])
+  conv1.weight: torch.Size([2048, 512, 1])
+  conv2.weight: torch.Size([512, 2048, 1])
+
+Encoder Layer 1:
+  attention.query_projection.weight: torch.Size([512, 512])
+  attention.key_projection.weight: torch.Size([512, 512])
+  attention.value_projection.weight: torch.Size([512, 512])
+  attention.out_projection.weight: torch.Size([512, 512])
+  conv1.weight: torch.Size([2048, 512, 1])
+  conv2.weight: torch.Size([512, 2048, 1])
+
+Analyzing encoder_layer_0_attention.query_projection.weight...
+   layer_id    name         D    M  ...        warning  weak_rank_loss      xmax     xmin
+0         1  linear  0.126688  512  ...  under-trained               0  1.314556  1.03942        
+
+[1 rows x 32 columns]
+
+Analyzing encoder_layer_0_attention.key_projection.weight...
+   layer_id    name         D    M  ...        warning  weak_rank_loss      xmax      xmin
+0         1  linear  0.124613  512  ...  under-trained               1  1.305411  1.026769       
+
+[1 rows x 32 columns]
+
+Analyzing encoder_layer_0_attention.value_projection.weight...
+   layer_id    name         D    M  ...        warning  weak_rank_loss     xmax      xmin
+0         1  linear  0.132973  512  ...  under-trained               1  1.29365  0.827736        
+
+[1 rows x 32 columns]
+
+Analyzing encoder_layer_0_attention.out_projection.weight...
+   layer_id    name        D    M    N  ...    sv_min  warning  weak_rank_loss      xmax     xmin
+0         1  linear  0.13522  512  512  ...  0.000908                        1  1.310158  0.79768
+
+[1 rows x 32 columns]
+
+Analyzing encoder_layer_0_conv1.weight...
+   layer_id    name         D    M  ...        warning  weak_rank_loss      xmax      xmin
+0         1  linear  0.132151  512  ...  under-trained               0  2.972198  1.916659       
+
+[1 rows x 32 columns]
+
+Analyzing encoder_layer_0_conv2.weight...
+   layer_id    name         D    M  ...        warning  weak_rank_loss      xmax     xmin
+0         1  linear  0.127254  512  ...  under-trained               0  0.753139  0.54789        
+
+[1 rows x 32 columns]
+
+Analyzing encoder_layer_1_attention.query_projection.weight...
+   layer_id    name        D    M  ...        warning  weak_rank_loss      xmax      xmin
+0         1  linear  0.12269  512  ...  under-trained               1  1.323187  1.055069        
+
+[1 rows x 32 columns]
+
+Analyzing encoder_layer_1_attention.key_projection.weight...
+   layer_id    name         D    M    N  ...    sv_min  warning  weak_rank_loss      xmax      xmin
+0         1  linear  0.128687  512  512  ...  0.000222                        1  1.300663  0.796901
+
+[1 rows x 32 columns]
+
+Analyzing encoder_layer_1_attention.value_projection.weight...
+   layer_id    name         D    M  ...        warning  weak_rank_loss      xmax      xmin
+0         1  linear  0.128619  512  ...  under-trained               1  1.301169  0.866218       
+
+[1 rows x 32 columns]
+
+Analyzing encoder_layer_1_attention.out_projection.weight...
+   layer_id    name         D    M  ...        warning  weak_rank_loss      xmax      xmin
+0         1  linear  0.131883  512  ...  under-trained               0  1.322313  1.174775       
+
+[1 rows x 32 columns]
+
+Analyzing encoder_layer_1_conv1.weight...
+   layer_id    name         D    M  ...        warning  weak_rank_loss      xmax      xmin
+0         1  linear  0.126759  512  ...  under-trained               0  2.970326  2.595263       
+
+[1 rows x 32 columns]
+
+Analyzing encoder_layer_1_conv2.weight...
+   layer_id    name         D    M  ...        warning  weak_rank_loss      xmax      xmin
+0         1  linear  0.127222  512  ...  under-trained               0  0.738203  0.517636       
+
+[1 rows x 32 columns]
+
+Analysis complete. Singular value plots saved as PNG files.
+PS C:\Users\kapoo\Downloads\rmt_arnav> 
