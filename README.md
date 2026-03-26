@@ -1,8 +1,8 @@
-## Informer + WeightWatcher: Encoder Layer Spectral Analysis
+# Informer + WeightWatcher: Encoder Layer Spectral Analysis
 
 This project integrates the [WeightWatcher](https://github.com/CalculatedContent/WeightWatcher) framework with the [Informer (2020)](https://github.com/zhouhaoyi/Informer2020) time-series transformer model. The goal is to extract encoder layer weights and analyze their singular value spectra (SVS), providing insight into the spectral properties and training quality of each layer.
 
-### Structure
+## Structure
 
 - **Informer2020/**: Original Informer implementation (model code, scripts, etc.)
 - **notebooks/**:
@@ -64,5 +64,3 @@ See the CSVs and notebooks for full tables and plots. Example (abridged):
 ## Contact
 
 For questions or further discussion, please contact me on mail : arnavkapoor23@iiserb.ac.in and the repository is licensed under MIT License.
-
----
